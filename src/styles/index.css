@@ -1,0 +1,131 @@
+/* Fonts - Roboto */
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* Generelle Einstellungen */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Variablen */
+
+:root {
+    --primary-color: #473BF0;
+    --secondary-color: #EDF5FC;
+    --shadow-color: #99A1A6;
+}
+
+/* Header */
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+nav.d-flex {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 1rem 0rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-right: 1rem;
+}
+
+.nav-icon .bar {
+    width: 2rem;
+    height: .2rem;
+    background-color: var(--secondary-color);
+    transition: .5s rotate, .5s translate;
+}
+
+.nav-icon.active :first-child {
+    rotate: 45deg;
+    translate: 0px 1rem;
+}
+
+.nav-icon.active :nth-child(2) {
+    visibility: hidden;
+}
+
+.nav-icon.active :last-child {
+    rotate: -45deg;
+    translate: 0px -.40rem;
+}
+
+@media screen and (min-width: 60rem) {
+    header {
+        padding: 0 1rem 0rem 1rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        box-shadow: .2rem .3rem 1rem .2rem var(--shadow-color);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    nav a {
+        border: none;
+        padding: 0 .3rem;
+        font-size: 1.05rem;
+    }
+
+    nav a:hover {
+        font-weight: bold;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+}
+
+
+
+
+
