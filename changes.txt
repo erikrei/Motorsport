@@ -1,0 +1,11 @@
+Branch: StartseiteSlideshow#3
+Änderungen:
+ - <title> von 'Motorcraft' zu 'Motorsport' in index.html geändert
+ - favicon zum Logo geändert
+ - Slideshow erstellt + 3 Slideshow-Bilder (verschiedene Formate)
+ - Slideshow Buttons erstellt 
+ - Slideshow Text erstellt
+ - Desktop View enthält Balken für individuelle Auswahl der Slides
+ - font-size mit clamp() angepasst
+ - Prev/Next Button überspringen Reihenfolge, wenn Bilder erstes/letztes ist
+ 
