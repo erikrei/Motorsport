@@ -8,4 +8,17 @@ Branch: StartseiteSlideshow#3
  - Desktop View enthält Balken für individuelle Auswahl der Slides
  - font-size mit clamp() angepasst
  - Prev/Next Button überspringen Reihenfolge, wenn Bilder erstes/letztes ist
- 
+
+Branch: StartseiteMain#4
+Änderungen:
+ - <main> Bereich hinzugefügt
+ - Layout erweitert sich auf 2 Columns
+@TODO
+ - Verschiedene Komponenten einfügen wie:
+   https://dribbble.com/shots/22581649-IT-Solutions-And-Services-Company-HTML-Template-Mitech,
+   https://dribbble.com/shots/22571539-Digital-Studio-Website-Design
+   Karten, die auf zukünftige Links führen |
+   https://dribbble.com/shots/22579380-Willcoo,n-Furniture-E-com-Landing-Page-for-Minimal-ECO-Style
+   Vergangene Touren mit Bildern und Beschreibung | 
+   https://dribbble.com/shots/22572843-Comfy-Interior-Landing-Page-Design
+   Layout ändern mit Text auf linker/rechter Seite + Bildern an der Seite <aside> + mögliche Statistiken (Touren abgehalten etc.) |
