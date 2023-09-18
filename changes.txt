@@ -22,3 +22,7 @@ Branch: StartseiteMain#4
    Vergangene Touren mit Bildern und Beschreibung | 
    https://dribbble.com/shots/22572843-Comfy-Interior-Landing-Page-Design
    Layout ändern mit Text auf linker/rechter Seite + Bildern an der Seite <aside> + mögliche Statistiken (Touren abgehalten etc.) |
+
+Branch: StartseiteFooter#5
+Änderungen:
+ - Footer erstellt + Links zum Github-Profil/Repository
