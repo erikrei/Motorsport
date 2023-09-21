@@ -26,3 +26,16 @@ Branch: StartseiteMain#4
 Branch: StartseiteFooter#5
 Änderungen:
  - Footer erstellt + Links zum Github-Profil/Repository
+
+Branch: TourenMain#13
+Änderungen:
+ - Navigation verlinkt touren.html
+ - header.js erstellt: Datei enthält nur JS-Header-Logik
+ - header.css erstellt: Datei enthält nur CSS-Header-Styles
+ - footer.css erstellt: Datei enthält nur CSS-Footer-Styles
+ - index-section.css, index-main.css erstellt: Datei enthalten index.html section/main-CSS-Styles
+ - slideshow.js erstellt: Datei enthält nur JS-Slideshow-Logik
+ - touren-section.css erstellt: Datei enthält touren.html section-CSS-Styles
+ - --main-black von #111 auf #222 geändert
+ - touren.html enthält Einleitung + Angebote + vergangene Touren
+ - Überschriften(<h1>, <h2>) wurden visuell überarbeitet

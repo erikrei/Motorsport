@@ -1,0 +1,49 @@
+main {
+    margin: 1rem 0rem;
+    padding: 0 1rem;
+}
+
+main ul {
+    padding: 0rem 0rem 0rem 1.2rem;
+}
+
+main img {
+    border-radius: 1rem;
+    margin: 1rem 0;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+@media screen and (min-width: 60rem) {
+    main {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+    }
+
+    main .content-container {
+        padding: 1rem;
+        flex: 0 1 50%;
+    }
+
+    .content-container h1,
+    .content-container h2 {
+        text-align: left;
+    }
+
+    .container-image {
+        display: flex;
+        width: calc(2 * 100%);
+    }
+
+    .container-image > picture {
+        align-self: center;
+    }
+
+    .container-text {
+        padding: 1rem 1rem 1rem 0;
+    }
+
+    .container-image .container-text h2 {
+        margin-top: 0;
+    }
+}
