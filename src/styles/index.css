@@ -41,7 +41,6 @@ h2 {
 h1,
 h2 {
     letter-spacing: 2px;
-    /* color: var(--main-black); */
     text-align: center;
     margin: 2rem 0;
 }
@@ -50,7 +49,7 @@ h1.main-heading,
 h2.main-heading {
     color: var(--secondary-color);
     padding: 1rem 0rem;
-    background: #222;
+    background-color: #222;
     border-radius: 0.5rem;
 }
 
@@ -71,4 +70,5 @@ ul li {
     --main-black: #222;
     --primary-color-rgb: 71, 59, 240;
     --secondary-color-rgb: 237, 245, 252;
+    --main-black-rgb: 34, 34, 34;
 }
