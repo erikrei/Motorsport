@@ -39,3 +39,10 @@ Branch: TourenMain#13
  - --main-black von #111 auf #222 geändert
  - touren.html enthält Einleitung + Angebote + vergangene Touren
  - Überschriften(<h1>, <h2>) wurden visuell überarbeitet
+
+Branch: FotosMain#17
+Änderungen:
+ - fotos.html erstellt und enthält alle Bilder der ganzen Seite
+ - diashow.html enthält Logik für Diashows
+ - diashow.css enthält CSS-Styles für Diashows
+ - Die vergangenen Touren bei touren.html enthalten jetzt auch die Diashow
