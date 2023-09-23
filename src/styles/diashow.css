@@ -34,7 +34,7 @@
 
 .diashow .main-img-container img {
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .diashow .main-img-container svg {
@@ -72,11 +72,15 @@
 
     .layer-img-container > img {
         height: calc(100% / 2);
-        object-fit: cover;
+        /* object-fit: cover; */
     }
 }
 
 @media screen and (min-width: 60rem) {
+    .diashow .main-img-container {
+        height: 50%;
+    }
+
     .diashow .main-img-container > img {
         width: 80%;
         max-height: 80%;

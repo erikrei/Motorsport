@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorsport | Motorräder</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/motorraeder/motorraeder-main.css">
+    <script src="./js/header.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <a href="./index.html">
+          <picture>
+            <source
+              media="(min-width: 60rem)"
+              srcset="./images/logo-smaller.svg"
+            />
+            <img src="./images/logo-original.svg" alt="Logo" />
+          </picture>
+        </a>
+        <div class="nav-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav>
+          <a href="./index.html">Startseite</a>
+          <a href="./touren.html">Touren</a>
+          <a href="./fotos.html">Fotos</a>
+          <a href="./motorraeder.html">Motorräder</a>
+        </nav>
+      </header>
+      <main>
+        <h1 class="main-heading">Motorräder</h1>
+        <section>
+          <div class="input-container">
+            <label for="modell">Modell</label>
+            <input type="text" id="modell">
+          </div>
+          <hr>
+          <div class="input-container">
+            <label for="farbe">Farbe</label>
+            <select name="farbe" id="farbe">
+              <option value="">Farbe wählen</option>
+              <option value="rot">rot</option>
+              <option value="gelb">gelb</option>
+              <option value="schwarz">schwarz</option>
+            </select>
+          </div>
+          <hr>
+          <div class="input-container">
+            <span>Preisspanne in €</span>
+            <div class="input-container-2-inputs">
+              <div class="input-container">
+                <label for="preisspanne-von">von</label>
+                <input type="number" id="preisspanne-von" min="0">
+              </div>
+              <div class="input-container">
+                <label for="preisspanne-bis">bis</label>
+                <input type="number" id="preisspanne-bis" min="0">
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
