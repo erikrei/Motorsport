@@ -46,3 +46,8 @@ Branch: FotosMain#17
  - diashow.html enthält Logik für Diashows
  - diashow.css enthält CSS-Styles für Diashows
  - Die vergangenen Touren bei touren.html enthalten jetzt auch die Diashow
+
+Branch: MotorraederFilterleiste#20
+Änderungen:
+ - motorraeder.html erstellt und enthält Filterleiste
+ - Filterbar anhand von Modell, Farbe und Preisspanne
