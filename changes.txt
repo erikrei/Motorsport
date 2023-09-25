@@ -50,4 +50,11 @@ Branch: FotosMain#17
 Branch: MotorraederFilterleiste#20
 Änderungen:
  - motorraeder.html erstellt und enthält Filterleiste
- - Filterbar anhand von Modell, Farbe und Preisspanne
+ - filterbar anhand von Modell, Farbe und Preisspanne
+
+Branch: MotorraederMain#21
+Änderungen:
+ - footer-y-padding von 2rem auf 1rem verkleinert
+ - Main Content enthält 6 Motorräder (Bilder von vorherigen Seiten entnommen)
+ - Main Content ist filterbar und gibt eine Fehlermeldung an, wenn keine Ergebnisse gefunden wurden
+ - filter.js enthält Logik für die Filterung 

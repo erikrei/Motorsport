@@ -1,39 +1,45 @@
 main {
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
-section {
+p.error {
+    color: red;
+    font-weight: bold;
+}
+
+section.filter {
     padding: 1rem;
     background-color: var(--main-black);
     border-radius: 0.5rem;
 }
 
-section span,
-section label {
+section.filter span,
+section.filter label {
     font-weight: bold;
 }
 
-section input, section select {
+section.filter input,
+section.filter select {
     width: 100%;
     font-size: 1rem;
 }
 
-section hr {
+section.filter hr {
     margin: 1rem 0;
 }
 
 .input-container {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     color: var(--secondary-color);
 }
 
 .input-container > * {
     display: block;
-    padding: .25rem 0;
+    padding: 0.25rem 0;
 }
 
 .input-container > label {
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 .input-container-2-inputs > .input-container {
@@ -41,11 +47,11 @@ section hr {
 }
 
 @media screen and (min-width: 60rem) {
-    section {
+    section.filter {
         display: flex;
     }
 
-    section .input-container :nth-child(3) {
+    section.filter .input-container :nth-child(3) {
         display: flex;
     }
 
@@ -57,16 +63,142 @@ section hr {
         display: flex;
         padding: 0;
     }
-    
+
     .input-container-2-inputs > .input-container {
         display: flex;
     }
 
     .input-container-2-inputs > .input-container label {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
     }
 
     hr {
         display: none;
+    }
+}
+
+article {
+    border-radius: 0.5rem;
+    background-color: var(--main-black);
+    margin-bottom: 1rem;
+}
+
+.d-none {
+    display: none;
+}
+
+.head-content {
+    position: relative;
+}
+
+.head-content > img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    filter: brightness(50%);
+}
+
+.head-content > h2 {
+    margin: 0;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.farben-content {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.farben-content > div {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-left: -1rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.farben-content > div:nth-child(1) {
+    z-index: 3;
+}
+
+.farben-content > div:nth-child(2) {
+    z-index: 2;
+}
+
+.farben-content > div:nth-child(3) {
+    z-index: 1;
+}
+
+div.schwarz {
+    background-color: black;
+}
+
+div.gelb {
+    background-color: yellow;
+}
+
+div.rot {
+    background-color: red;
+}
+
+.head-content p.preis {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.25rem 0.75rem;
+    background-color: var(--secondary-color);
+    color: var(--main-black);
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.main-content {
+    padding: 1rem;
+    color: var(--secondary-color);
+}
+
+.content-text {
+    margin-bottom: 0.5rem;
+}
+
+.main-content p {
+    margin: 0;
+}
+
+.main-content h3 {
+    margin-bottom: 0.25rem;
+}
+
+.main-content p::before {
+    margin-right: 0.25rem;
+}
+
+.vorteile p::before {
+    content: "✅";
+}
+
+.nachteile p::before {
+    content: "❌";
+}
+
+@media screen and (min-width: 40rem) {
+    section.content {
+        display: flex;
+        flex-flow: wrap row;
+        gap: 1rem;
+    }
+
+    article {
+        margin: 0;
+        flex: 1 1 calc(50% - 0.5rem);
+        max-width: calc(50% - 1rem);
     }
 }
