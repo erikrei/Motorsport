@@ -6,8 +6,9 @@
     <title>Motorsport | Motorräder</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/motorraeder/motorraeder-main.css">
+    <link rel="stylesheet" href="./styles/motorraeder/motorraeder-main.css" />
     <script src="./js/header.js" defer></script>
+    <script src="./js/filter.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -34,37 +35,190 @@
         </nav>
       </header>
       <main>
-        <h1 class="main-heading">Motorräder</h1>
-        <section>
+        <section class="filter">
           <div class="input-container">
             <label for="modell">Modell</label>
-            <input type="text" id="modell">
+            <input type="text" id="modell" class="input-event" />
           </div>
-          <hr>
+          <hr />
           <div class="input-container">
             <label for="farbe">Farbe</label>
-            <select name="farbe" id="farbe">
+            <select name="farbe" id="farbe" class="input-event">
               <option value="">Farbe wählen</option>
               <option value="rot">rot</option>
               <option value="gelb">gelb</option>
               <option value="schwarz">schwarz</option>
             </select>
           </div>
-          <hr>
+          <hr />
           <div class="input-container">
             <span>Preisspanne in €</span>
             <div class="input-container-2-inputs">
               <div class="input-container">
                 <label for="preisspanne-von">von</label>
-                <input type="number" id="preisspanne-von" min="0">
+                <input type="number" id="preisspanne-von" min="0" class="input-event"/>
               </div>
               <div class="input-container">
                 <label for="preisspanne-bis">bis</label>
-                <input type="number" id="preisspanne-bis" min="0">
+                <input type="number" id="preisspanne-bis" min="0" class="input-event"/>
               </div>
             </div>
           </div>
         </section>
+        <h1 class="main-heading">Motorräder</h1>
+        <section class="content">
+          <article>
+            <div class="head-content">
+              <img src="./images/main-1-640wx438h.jpg" alt="" />
+              <h2>BMW R 1250 GS</h2>
+              <div class="farben-content">
+                <div class="rot"></div>
+                <div class="gelb"></div>
+                <div class="schwarz"></div>
+              </div>
+              <p class="preis">1299€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="head-content">
+              <img src="./images/slide-1-640w360h.jpg" alt="" />
+              <h2>Kawasaki Z 900</h2>
+              <div class="farben-content">
+                <div class="schwarz"></div>
+              </div>
+              <p class="preis">1899€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="head-content">
+              <img src="./images/slide-2-640w360h.jpg" alt="" />
+              <h2>Yamaha MT-07</h2>
+              <div class="farben-content">
+                <div class="gelb"></div>
+                <div class="schwarz"></div>
+              </div>
+              <p class="preis">3499€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="head-content">
+              <img src="./images/slide-3-640w360h.jpg" alt="" />
+              <h2>Yamaha Ténéré 700</h2>
+              <div class="farben-content">
+                <div class="rot"></div>
+              </div>
+              <p class="preis">4999€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="head-content">
+              <img src="./images/motorrad-1-640w432h.jpg" alt="" />
+              <h2>Honda CRF 1100 L Africa Twin</h2>
+              <div class="farben-content">
+                <div class="rot"></div>
+                <div class="gelb"></div>
+                <div class="schwarz"></div>
+              </div>
+              <p class="preis">899€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+          <article>
+            <div class="head-content">
+              <img src="./images/motorrad-2-640w360h.jpg" alt="" />
+              <h2>Kawasaki Z 650</h2>
+              <div class="farben-content">
+                <div class="rot"></div>
+                <div class="schwarz"></div>
+              </div>
+              <p class="preis">2599€</p>
+            </div>
+            <div class="main-content">
+              <div class="content-text vorteile">
+                <h3>Vorteile</h3>
+                <p>Zweirädriges Fahrzeug</p>
+                <p>Verbrennungsmotor</p>
+                <p>Leichtbauweise</p>
+              </div>
+              <div class="content-text nachteile">
+                <h3>Nachteile</h3>
+                <p>Offenes Design</p>
+                <p>Lenkersteuerung</p>
+                <p>Kraftstoffeffizienz</p>
+              </div>
+            </div>
+          </article>
+        </section>
+        <p class="error d-none">Keine Ergebnisse mit angegebenen Filtern gefunden.</p>
       </main>
     </div>
   </body>
