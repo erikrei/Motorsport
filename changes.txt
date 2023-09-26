@@ -58,3 +58,10 @@ Branch: MotorraederMain#21
  - Main Content enthält 6 Motorräder (Bilder von vorherigen Seiten entnommen)
  - Main Content ist filterbar und gibt eine Fehlermeldung an, wenn keine Ergebnisse gefunden wurden
  - filter.js enthält Logik für die Filterung 
+
+Branch: ChangeHeader#6
+Änderungen:
+ - 1. und 3. Bar rotieren jetzt mit geändertem transform-origin
+ - 2. Bar verschwindet, indem height auf 0 gesetzt wird
+ - headertmp.css neue CSS-Header-Datei
+ - Menü im Mobile View wird jetzt aus- und eingefahren
