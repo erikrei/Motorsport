@@ -28,8 +28,9 @@ nav a {
 .nav-icon {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     margin-right: 1rem;
+    height: 1.5rem;
+    justify-content: space-between;
 }
 
 .nav-icon .bar {
@@ -38,21 +39,24 @@ nav a {
     background-color: var(--secondary-color);
     transition:
         0.5s rotate,
-        0.5s translate;
+        0.5s translate,
+        0.5s height,
+        0.5s margin,
+        .5s transform-origin;
 }
 
 .nav-icon.active :first-child {
     rotate: 45deg;
-    translate: 0px 1rem;
+    transform-origin: top left;
 }
 
 .nav-icon.active :nth-child(2) {
-    visibility: hidden;
+    height: 0px;
 }
 
 .nav-icon.active :last-child {
     rotate: -45deg;
-    translate: 0px -0.4rem;
+    transform-origin: bottom left;
 }
 
 @media screen and (min-width: 60rem) {
