@@ -65,3 +65,10 @@ Branch: ChangeHeader#6
  - 2. Bar verschwindet, indem height auf 0 gesetzt wird
  - headertmp.css neue CSS-Header-Datei
  - Menü im Mobile View wird jetzt aus- und eingefahren
+
+Branch: ChangeStartseite#10
+Änderungen:
+ - Main Content komplett verändert
+ - index-main-tmp.css neue CSS-Datei für den Main Content
+ - Slideshow gelöscht + slideshow.js
+ - Header etwas mehr padding + letztes NavItem hat auch border-bottom
