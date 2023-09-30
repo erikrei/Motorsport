@@ -19,6 +19,10 @@ nav {
     padding: 0 1rem;
 }
 
+nav.d-flex {
+    padding-bottom: 1rem;
+}
+
 nav a {
     text-decoration: none;
     color: var(--secondary-color);
@@ -34,10 +38,8 @@ nav.d-flex a {
     transition: .5s height, .5s padding;
     display: flex;
     align-items: center;
-}
-
-nav.d-flex a:not(:last-child) {
     border-bottom: 1px solid var(--secondary-color);
+
 }
 
 .nav-icon {

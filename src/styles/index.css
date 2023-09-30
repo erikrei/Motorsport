@@ -42,7 +42,6 @@ h1,
 h2 {
     letter-spacing: 2px;
     text-align: center;
-    margin: 2rem 0;
 }
 
 h1.main-heading,
@@ -61,14 +60,19 @@ ul li {
     font-size: 1.1rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Variablen */
 
 :root {
     --primary-color: #473bf0;
     --secondary-color: #edf5fc;
-    --shadow-color: #99a1a6;
+    --shadow-color: #d2d6e4;
     --main-black: #222;
     --primary-color-rgb: 71, 59, 240;
     --secondary-color-rgb: 237, 245, 252;
     --main-black-rgb: 34, 34, 34;
+    --primary-color-hover: #3930bf;
 }
