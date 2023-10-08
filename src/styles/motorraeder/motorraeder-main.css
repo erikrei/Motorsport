@@ -1,5 +1,10 @@
 main {
-    padding: 1rem;
+    margin: 2rem 0rem;
+    padding: 0rem 1rem;
+}
+
+main > h1 {
+    margin: 2rem 0;
 }
 
 p.error {
@@ -44,6 +49,10 @@ section.filter hr {
 
 .input-container-2-inputs > .input-container {
     padding: 0.25rem 0;
+}
+
+.input-container > input[type="number"] {
+    margin-right: .25rem;
 }
 
 @media screen and (min-width: 60rem) {
@@ -199,6 +208,13 @@ div.rot {
     article {
         margin: 0;
         flex: 1 1 calc(50% - 0.5rem);
-        max-width: calc(50% - 1rem);
+        max-width: calc(50% - .5rem);
+    }
+}
+
+
+@media screen and (min-width: 71rem) {
+    main {
+        padding: 0;
     }
 }

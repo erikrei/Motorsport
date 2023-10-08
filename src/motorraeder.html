@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motorsport | Motorräder</title>
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/headertmp.css">
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/motorraeder/motorraeder-main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <script src="./js/header.js" defer></script>
     <script src="./js/filter.js" defer></script>
   </head>
@@ -56,11 +57,23 @@
             <div class="input-container-2-inputs">
               <div class="input-container">
                 <label for="preisspanne-von">von</label>
-                <input type="number" id="preisspanne-von" min="0" class="input-event"/>
+                <input
+                  type="number"
+                  id="preisspanne-von"
+                  min="0"
+                  class="input-event"
+                />
+                <span>€</span>
               </div>
               <div class="input-container">
                 <label for="preisspanne-bis">bis</label>
-                <input type="number" id="preisspanne-bis" min="0" class="input-event"/>
+                <input
+                  type="number"
+                  id="preisspanne-bis"
+                  min="0"
+                  class="input-event"
+                />
+                <span>€</span>
               </div>
             </div>
           </div>
@@ -69,7 +82,10 @@
         <section class="content">
           <article>
             <div class="head-content">
-              <img src="./images/main-1-640wx438h.jpg" alt="" />
+              <img
+                src="./images/main-1-640wx438h.jpg"
+                alt="Bild eines Motorrads, das auf der Straße steht"
+              />
               <h2>BMW R 1250 GS</h2>
               <div class="farben-content">
                 <div class="rot"></div>
@@ -119,7 +135,10 @@
           </article>
           <article>
             <div class="head-content">
-              <img src="./images/slide-2-640w360h.jpg" alt="" />
+              <img
+                src="./images/slide-2-640w360h.jpg"
+                alt="Zoom auf Motorrad von einer Harley Davidson"
+              />
               <h2>Yamaha MT-07</h2>
               <div class="farben-content">
                 <div class="gelb"></div>
@@ -144,7 +163,10 @@
           </article>
           <article>
             <div class="head-content">
-              <img src="./images/slide-3-640w360h.jpg" alt="" />
+              <img
+                src="./images/slide-3-640w360h.jpg"
+                alt="Motorrad, das in einer Werkstatt steht"
+              />
               <h2>Yamaha Ténéré 700</h2>
               <div class="farben-content">
                 <div class="rot"></div>
@@ -168,7 +190,10 @@
           </article>
           <article>
             <div class="head-content">
-              <img src="./images/motorrad-1-640w432h.jpg" alt="" />
+              <img
+                src="./images/motorrad-1-640w432h.jpg"
+                alt="Ein Motorrad von Royal Enfield steht vor einer gelben Wand"
+              />
               <h2>Honda CRF 1100 L Africa Twin</h2>
               <div class="farben-content">
                 <div class="rot"></div>
@@ -194,7 +219,10 @@
           </article>
           <article>
             <div class="head-content">
-              <img src="./images/motorrad-2-640w360h.jpg" alt="" />
+              <img
+                src="./images/motorrad-2-640w360h.jpg"
+                alt="Ein schwarzes Motorrad steht vor Hochhäusern auf der Straße und wird von unten fotografiert"
+              />
               <h2>Kawasaki Z 650</h2>
               <div class="farben-content">
                 <div class="rot"></div>
@@ -218,8 +246,24 @@
             </div>
           </article>
         </section>
-        <p class="error d-none">Keine Ergebnisse mit angegebenen Filtern gefunden.</p>
+        <p class="error d-none">
+          Keine Ergebnisse mit angegebenen Filtern gefunden.
+        </p>
       </main>
+      <footer>
+        <p>
+          Die Seite dient nur zur Veranschaulichung der persönlichen
+          <code>HTML</code> , <code>CSS</code> und zum Teil
+          <code>JavaScript</code> Kenntnisse.
+        </p>
+        <p>
+          Erstellt von
+          <a href="https://github.com/erikrei">Erik Reisswig</a> unter
+          <a href="https://github.com/erikrei/static_motorrad"
+            >GitHub Repository</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

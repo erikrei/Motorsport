@@ -93,6 +93,10 @@ nav.d-flex a {
     nav a {
         height: auto;
     }
+
+    nav a:hover {
+        font-weight: bold;
+    }
 }
 
 @media screen and (min-width: 71rem) {
@@ -100,9 +104,5 @@ nav.d-flex a {
         border-bottom-left-radius: .5rem;
         border-bottom-right-radius: .5rem;
         box-shadow: 0.2rem 0.3rem 1rem 0.2rem var(--shadow-color);
-    }
-
-    nav a {
-        text-shadow: 0.1rem 0.1rem 0.2rem var(--shadow-color);
     }
 }
