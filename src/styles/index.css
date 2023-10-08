@@ -14,6 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto";
+    scroll-behavior: smooth;
 }
 
 img {
@@ -46,9 +47,9 @@ h2 {
 
 h1.main-heading,
 h2.main-heading {
-    color: var(--secondary-color);
+    color: var(--main-black);
     padding: 1rem 0rem;
-    background-color: #222;
+    background-color: var(--shadow-color);
     border-radius: 0.5rem;
 }
 
@@ -75,4 +76,126 @@ a {
     --secondary-color-rgb: 237, 245, 252;
     --main-black-rgb: 34, 34, 34;
     --primary-color-hover: #3930bf;
+    --hero-section-margin-top: 2rem;
+    --hero-section-border-radius: 1rem;
+    --hero-section-shadow: 0.1rem 0.1rem 1rem var(--main-black);
+}
+
+
+.touren {
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.touren-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.single-tour {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-black);
+    border-radius: 1rem;
+    box-shadow: .25rem .25rem 1rem var(--main-black);
+    max-width: 40rem;
+}
+
+.single-tour > h2 {
+    text-align: left;
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.single-tour > img {
+    border-radius: 1rem;
+    margin: 0 1rem;
+    border: 2px solid var(--secondary-color);
+}
+
+.single-tour > div {
+    padding: 1rem;
+}
+
+.single-tour > div > p {
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.single-tour > div > p::before {
+    content: "";
+    background-color: var(--primary-color);
+    width: .05rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.single-tour > div > div {
+    margin: 1rem 0;
+    display: flex;
+    gap: .5rem;
+    flex-flow: row wrap;
+}
+
+.single-tour > div > span {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.single-tour > div > div > span {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: .25rem 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.single-tour > div > div > span:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.single-tour > button {
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--shadow-color);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.single-tour > button:hover {
+    background-color: var(--primary-color-hover);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 60rem) {
+    .touren-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .single-tour {
+        flex: 1;
+    }
+}
+
+@media screen and (min-width: 71rem) {
+    .touren {
+        padding: 0;
+    }
 }

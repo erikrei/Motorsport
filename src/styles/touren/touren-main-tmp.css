@@ -1,0 +1,16 @@
+.custom-touren {
+    margin: 1rem;
+}
+
+.custom-touren-content {
+    margin-top: 2rem;
+}
+
+.custom-touren-content > button {
+    width: 100%;
+    padding: .5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    border: none;
+}
