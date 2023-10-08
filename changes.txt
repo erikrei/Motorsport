@@ -80,3 +80,8 @@ Branch: ChangeTouren#25
  - Layout für touren.html verändert
  - "Touren buchen"-Button in index.html springt direkt zu touren.html und den vordefinierten Touren
  - Anpasser für Touren hinzugefügt + anpasser.js für die Logik und anpasser.css für den Style
+
+Branch: ChangeMotorraeder#24
+Änderungen:
+ - Layout angepasst
+ - CSS-Dateien, die "tmp" beinhaltet haben umbennant
