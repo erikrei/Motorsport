@@ -1,0 +1,245 @@
+main > div {
+    margin-bottom: 2rem;
+}
+
+h2 > span {
+    color: var(--primary-color);
+}
+
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--shadow-color);
+    padding-bottom: 3rem;
+    box-shadow: .1rem .1rem 1rem var(--main-black);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    padding: 1rem;
+    color: var(--main-black);
+}
+
+.text-container > * {
+    margin-bottom: 1rem;
+}
+
+.header-text > span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.header-text > h1 {
+    text-align: left;
+    line-height: 2rem;
+}
+
+.button-container {
+    margin-bottom: 0;
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--shadow-color);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.secondary-btn {
+    color: var(--main-black);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--main-black);
+}
+
+.secondary-btn:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-black);
+}
+
+.button-container > .btn {
+    flex: 1 1 0px;
+    text-align: center;
+    padding: 0.75rem 0;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition:
+        0.5s background-color,
+        0.5s color;
+}
+
+.statistiken {
+    padding: 0 1rem 0rem 1rem;
+}
+
+.statistik-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 .5rem 1rem var(--main-black);
+    max-width: 40rem;
+}
+
+.statistik-container > hr {
+    margin: 1rem 0;
+    border: 1px solid var(--secondary-color);
+}
+
+.single-statistik {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-statistik > p {
+    margin: 0;
+}
+
+.single-statistik > .statistik-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    height: 4rem;
+    width: 4rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+.single-statistik > .statistik-text {
+    color: var(--secondary-color);
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+.bewertungen {
+    padding: 0 1rem 0 1rem;
+}
+
+.bewertung-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.single-bewertung {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    max-width: 40rem;
+}
+
+.outline {
+    color: var(--main-black);
+    border: 2px solid var(--main-black);
+    background-color: white;
+}
+
+.fill {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.single-bewertung {
+    box-shadow: .1rem .1rem 1rem var(--main-black);
+}
+
+.single-bewertung > p {
+    margin-bottom: 0.5rem;
+}
+
+.single-bewertung > .bewertung-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 60rem) {
+    .landing-container {
+        margin-bottom: 0;
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 3rem;
+    }
+
+    .landing-container > div {
+        flex: 1;
+    }
+
+    .image-container {
+        order: 1;
+    }
+
+    .button-container > .btn {
+        flex: 0 1 auto;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .statistiken {
+        padding: 0 5rem 0 5rem;
+        margin-top: -2rem;
+    }
+
+    .statistiken > h2 {
+        display: none;
+    }
+
+    .statistik-container {
+        margin-top: 0;
+        flex-direction: row;
+        border: 0.25rem solid var(--secondary-color);
+        border-radius: 1rem;
+        max-width: 100%;
+    }
+
+    .statistik-container > hr {
+        margin: 0 1rem;
+    }
+
+    .single-statistik {
+        flex: 1;
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .single-statistik > .statistik-number {
+        height: auto;
+    }
+
+    .bewertung-container {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 70rem) {
+    .landing-container {
+        margin-top: 2rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (min-width: 71rem) {
+    .bewertungen {
+        padding: 0;
+    }
+}

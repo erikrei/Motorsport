@@ -72,3 +72,11 @@ Branch: ChangeStartseite#10
  - index-main-tmp.css neue CSS-Datei für den Main Content
  - Slideshow gelöscht + slideshow.js
  - Header etwas mehr padding + letztes NavItem hat auch border-bottom
+
+Branch: ChangeTouren#25
+Änderungen:
+ - CSS für <h2> Elemente verändert
+ - index.html <h2> Elemente enthalten jetzt die Klasse "main-heading"
+ - Layout für touren.html verändert
+ - "Touren buchen"-Button in index.html springt direkt zu touren.html und den vordefinierten Touren
+ - Anpasser für Touren hinzugefügt + anpasser.js für die Logik und anpasser.css für den Style

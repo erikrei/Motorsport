@@ -6,13 +6,16 @@
     <title>Motorsport | Touren</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/headertmp.css" />
-    <link rel="stylesheet" href="./styles/touren/touren-section.css" />
-    <link rel="stylesheet" href="./styles/touren/touren-aside.css" />
+    <link rel="stylesheet" href="./styles/touren/touren-section-tmp.css" />
+    <link rel="stylesheet" href="./styles/touren/touren-main-tmp.css" />
+    <link rel="stylesheet" href="./styles/anpasser.css" />
+    <!-- <link rel="stylesheet" href="./styles/touren/touren-section.css" />
+    <link rel="stylesheet" href="./styles/touren/touren-aside.css" /> -->
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/diashow.css" />
     <link rel="icon" href="./images/logo-smaller.svg" />
     <script src="./js/header.js" defer></script>
-    <script src="./js/diashow.js" defer></script>
+    <script src="./js/anpasser.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -39,247 +42,124 @@
         </nav>
       </header>
       <section>
-        <h1 class="main-heading">Touren</h1>
-        <p>
-          Motorradtouren bieten eine unvergleichliche Möglichkeit, die Freiheit
-          auf zwei Rädern zu erleben und gleichzeitig die Schönheit der Natur
-          und Kultur zu erkunden.
-        </p>
-        <p>
-          Das leise Summen des Motors, der Wind in den Haaren und die Kurven der
-          Straße vor einem sind ein Gefühl von Freiheit, das schwer zu
-          übertreffen ist. Von atemberaubenden Bergpässen bis hin zu malerischen
-          Küstenstraßen gibt es unzählige Reiserouten für Motorradenthusiasten.
-        </p>
-        <picture>
-          <source
-            media="(min-width: 40rem)"
-            srcset="./images/touren-einleitung-1280w.jpg"
-          />
-          <img
-            src="./images/touren-einleitung-640w227h.jpg"
-            alt="Motorradfahrer auf einer Wiese vor einem Wald"
-          />
-        </picture>
-        <p>
-          Diese Touren ermöglichen es den Fahrern, neue Orte zu entdecken,
-          lokale Köstlichkeiten zu kosten und mit Gleichgesinnten in Kontakt zu
-          treten. Aber Motorradtouren sind nicht nur ein Abenteuer für die
-          Sinne; sie fördern auch ein Gefühl der Gemeinschaft und des
-          Zusammenhalts unter den Bikern.
-        </p>
-        <p>
-          Auf zwei Rädern unterwegs zu sein, bedeutet, sich selbst
-          herauszufordern und das Leben intensiver zu erleben. Es ist eine
-          Leidenschaft, die Herz und Seele erfüllt und unvergessliche
-          Erinnerungen schafft.
-        </p>
+        <div class="hero-section">
+          <picture>
+            <source
+              media="(min-width: 40rem)"
+              srcset="./images/touren-einleitung-1280w.jpg"
+            />
+            <img src="./images/touren-einleitung-640w227h.jpg" alt="" />
+          </picture>
+          <h1>Touren</h1>
+        </div>
+        <div class="section-cards">
+          <div class="card">
+            <img
+              class="card-background"
+              src="./images/touren-1-640w440h.jpg"
+              alt=""
+            />
+            <div class="card-text">
+              <h2>Vordefinierte Touren</h2>
+              <p>
+                Erleben Sie unvergessliche Abenteuertouren mit atemberaubenden
+                Landschaften, faszinierender Kultur und aufregenden Aktivitäten
+                für alle Reiseliebhaber.
+              </p>
+              <a href="#predefined-tours">Touren erkunden</a>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="card-background"
+              src="./images/touren-2-640w440h.jpg"
+              alt=""
+            />
+            <div class="card-text">
+              <h2>Anpassbare Touren</h2>
+              <p>
+                Personalisieren Sie Ihre Abenteuer mit flexiblen Touren,
+                maßgeschneidert für Ihre Interessen, Zeitpläne und Vorlieben,
+                für ein einzigartiges Reiseerlebnis.
+              </p>
+              <a id="customize-button">Zum Touren Anpasser</a>
+            </div>
+          </div>
+        </div>
       </section>
       <main>
-        <h2 class="main-heading">Angebote</h2>
-        <div class="offer-container">
-          <article>
-            <img
-              src="./images/touren-1-640w440h.jpg"
-              alt="Landschaftsstraße mit Feldern an den Seiten und Sonnenschein im Himmel"
-            />
-            <div class="text-container">
-              <h2 class="text-heading">
-                <div></div>
-                Kategorie
-              </h2>
-              <p class="text-content">Landschaftsreise</p>
-              <h2 class="text-heading">
-                <div></div>
-                Beschreibung
-              </h2>
-              <p class="text-content">
-                Eine malerische Motorradtour führt durch endlose, von saftigem
-                Grün gesäumte Landschaften, vorbei an glitzernden Flüssen und
-                duftenden Wäldern. Die sanften Hügel und weiten Felder bieten
-                eine idyllische Kulisse für unvergessliche Fahrerlebnisse
-                inmitten der Natur.
-              </p>
-              <h2 class="text-heading">
-                <div></div>
-                Gebiet und Streckenlänge
-              </h2>
-              <p class="text-content">Die Route 66 (USA), 127km</p>
-              <hr />
-              <p class="price">ab 450€</p>
+        <div class="touren" id="predefined-tours">
+          <h2 class="main-heading">Vordefinierte Touren</h2>
+          <div class="touren-container">
+            <div class="single-tour">
+              <h2>San Francisco</h2>
+              <img
+                src="./images/touren-3-640w440h.jpg"
+                alt="Stark beleuchtete Autobahnbrücke umhüllt von Wasser"
+              />
+              <div>
+                <p>Tags</p>
+                <div>
+                  <span>Städtereise</span>
+                  <span>USA</span>
+                  <span>> 2.500km</span>
+                  <span>Kultur</span>
+                  <span>lokale Küche</span>
+                </div>
+                <p>Preis</p>
+                <span>2499€</span>
+              </div>
+              <button type="button">Jetzt buchen</button>
             </div>
-          </article>
-          <article>
-            <img
-              src="./images/touren-2-640w440h.jpg"
-              alt="Landschaftsstraße mit Feldern an den Seiten und Sonnenschein im Himmel"
-            />
-            <div class="text-container">
-              <h2 class="text-heading">
-                <div></div>
-                Kategorie
-              </h2>
-              <p class="text-content">Landschaftsreise</p>
-              <h2 class="text-heading">
-                <div></div>
-                Beschreibung
-              </h2>
-              <p class="text-content">
-                Eine aufregende Motorradtour führt entlang kurviger Bergstraßen,
-                umgeben von majestätischen Gipfeln und tiefen Schluchten. Die
-                frische Bergluft und der Nervenkitzel der engen Kurven machen
-                diese Tour zu einem unvergesslichen Abenteuer für
-                Motorrad-Enthusiasten
-              </p>
-              <h2 class="text-heading">
-                <div></div>
-                Gebiet und Streckenlänge
-              </h2>
-              <p class="text-content">
-                Die Rocky Mountains (USA und Kanada), 227km
-              </p>
-              <hr />
-              <p class="price">ab 1300€</p>
+            <div class="single-tour">
+              <h2>Route 66</h2>
+              <img
+                src="./images/touren-1-640w440h.jpg"
+                alt="Landschaftsstraße mit Feldern an den Seiten und Sonnenschein im Himmel"
+              />
+              <div>
+                <p>Tags</p>
+                <div>
+                  <span>Freiheit</span>
+                  <span>Abenteuer</span>
+                  <span>Wind</span>
+                  <span>Kurven</span>
+                  <span>Adrenalin</span>
+                  <span>Natur</span>
+                  <span>> 2.000km</span>
+                </div>
+                <p>Preis</p>
+                <span>1599€</span>
+              </div>
+              <button type="button">Jetzt buchen</button>
             </div>
-          </article>
-          <article>
-            <img
-              src="./images/touren-3-640w440h.jpg"
-              alt="Landschaftsstraße mit Feldern an den Seiten und Sonnenschein im Himmel"
-            />
-            <div class="text-container">
-              <h2 class="text-heading">
-                <div></div>
-                Kategorie
-              </h2>
-              <p class="text-content">Städtereise</p>
-              <h2 class="text-heading">
-                <div></div>
-                Beschreibung
-              </h2>
-              <p class="text-content">
-                Eine aufregende Motorradtour führt durch pulsierende Metropolen,
-                historische Städte und malerische Dörfer. Die Vielfalt der
-                urbanen und ländlichen Landschaften auf dieser Reise ermöglicht
-                es, kulturelle Schätze zu entdecken, lokale Küche zu genießen
-                und das Abenteuer auf zwei Rädern in vollen Zügen zu erleben.
-              </p>
-              <h2 class="text-heading">
-                <div></div>
-                Gebiete und Streckenlänge
-              </h2>
-              <p class="text-content">
-                Paris (Frankreich) - Rom (Italien) - Berlin (Deutschland) -
-                Madrid (Spanien) - Amsterdam (Niederlande), etwa 6.700km
-              </p>
-              <hr />
-              <p class="price">ab 5800€</p>
+            <div class="single-tour">
+              <h2>Grand Canyon</h2>
+              <img
+                src="./images/touren-2-640w440h.jpg"
+                alt="Berge mit vielen grünen Aspekten und Wolken im Himmel"
+              />
+              <div>
+                <p>Tags</p>
+                <div>
+                  <span>Entdeckung</span>
+                  <span>Geschwindigkeit</span>
+                  <span>Einsamkeit</span>
+                  <span>Ausblick</span>
+                  <span>Freiheitsgefühl</span>
+                  <span>Romantik</span>
+                  <span>Unabhängigkeit</span>
+                  <span>Aufregung</span>
+                  <span>Gelassenheit</span>
+                </div>
+                <p>Preis</p>
+                <span>899€</span>
+              </div>
+              <button type="button">Jetzt buchen</button>
             </div>
-          </article>
+          </div>
         </div>
       </main>
-      <aside>
-        <h2 class="main-heading">Vergangene Touren</h2>
-        <div class="touren-container">
-          <div class="tour-container">
-            <div class="text-container">
-              <h2>Kategorie</h2>
-              <p>Landschaftsreise</p>
-            </div>
-            <div class="text-container">
-              <h2>Beschreibung</h2>
-              <p>
-                Während dieser Motorradreise erkundete man abwechslungsreiche
-                Landschaften, darunter beeindruckende Berge und malerische
-                Küstenabschnitte. Das Motorengeräusch verschmolz mit den
-                natürlichen Klängen, und die Fortbewegung auf zwei Rädern
-                ermöglichte eine einzigartige Freiheitserfahrung.
-              </p>
-            </div>
-            <div class="text-container">
-              <h2>Bilder</h2>
-              <div class="img-container">
-                <img
-                  src="./images/touren-4-640w.jpg"
-                  alt="Dichter Nebel über einem Wald"
-                />
-                <img
-                  src="./images/touren-5-640w.jpg"
-                  alt="Ein Schiff auf einem Meer, das wie der Weltraum aussieht"
-                />
-                <img
-                  src="./images/touren-6-640w.jpg"
-                  alt="Ein Weg in einem Wald im Herbst, in dem ein helles Licht scheint"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="tour-container">
-            <div class="text-container">
-              <h2>Kategorie</h2>
-              <p>Landschaftsreise</p>
-            </div>
-            <div class="text-container">
-              <h2>Beschreibung</h2>
-              <p>
-                Die Straßen waren malerisch, und in den Dörfern begegnete man
-                freundlichen Menschen und köstlichen regionalen Gerichten, was
-                die Reise zu einem kulturellen und kulinarischen Abenteuer
-                machte.
-              </p>
-            </div>
-            <div class="text-container">
-              <h2>Bilder</h2>
-              <div class="img-container">
-                <img
-                  src="./images/touren-4-640w.jpg"
-                  alt="Dichter Nebel über einem Wald"
-                />
-                <img
-                  src="./images/touren-5-640w.jpg"
-                  alt="Ein Schiff auf einem Meer, das wie der Weltraum aussieht"
-                />
-                <img
-                  src="./images/touren-6-640w.jpg"
-                  alt="Ein Weg in einem Wald im Herbst, in dem ein helles Licht scheint"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="tour-container">
-            <div class="text-container">
-              <h2>Kategorie</h2>
-              <p>Städtereise</p>
-            </div>
-            <div class="text-container">
-              <h2>Beschreibung</h2>
-              <p>
-                Auf dieser Städtereise erkundete man faszinierende Metropolen,
-                von historischen Altstädten bis zu modernen Wolkenkratzern. Das
-                Treiben der Großstadt mischte sich mit Kultur und Gastronomie,
-                und man genoss die Vielfalt urbanen Lebens.
-              </p>
-            </div>
-            <div class="text-container">
-              <h2>Bilder</h2>
-              <div class="img-container">
-                <img
-                  src="./images/touren-4-640w.jpg"
-                  alt="Dichter Nebel über einem Wald"
-                />
-                <img
-                  src="./images/touren-5-640w.jpg"
-                  alt="Ein Schiff auf einem Meer, das wie der Weltraum aussieht"
-                />
-                <img
-                  src="./images/touren-6-640w.jpg"
-                  alt="Ein Weg in einem Wald im Herbst, in dem ein helles Licht scheint"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </aside>
       <footer>
         <p>
           Die Seite dient nur zur Veranschaulichung der persönlichen
@@ -294,6 +174,62 @@
           >
         </p>
       </footer>
+      <div id="full-size-layer">
+        <div class="layer-header">
+          <h2>Tour anpassen</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <!--!
+            Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License -
+            https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+        <div class="layer-choice" data-show="true">
+          <h3>Art der Tour</h3>
+          <div class="layer-choices">
+            <span>Landschaftstour</span>
+            <span>Städtetour</span>
+          </div>
+        </div>
+        <div class="layer-choice">
+          <h3>Landschaftsart</h3>
+          <div class="layer-choices">
+            <span>Gebirge</span>
+            <span>Wüste</span>
+            <span>Küsten</span>
+            <span>Flüsse</span>
+            <span>Wälder</span>
+          </div>
+        </div>
+        <div class="layer-choice">
+          <h3>Städteauswahl</h3>
+          <div class="layer-choices">
+            <span>Berlin</span>
+            <span>Kalifornien</span>
+            <span>Madrid</span>
+            <span>Paris</span>
+            <span>Amsterdam</span>
+          </div>
+        </div>
+        <div class="layer-choice">
+          <h3>Kilometeranzahl</h3>
+          <div class="layer-choices">
+            <span>100 bis 200 km</span>
+            <span>200 bis 500 km</span>
+            <span>500 bis 1000 km</span>
+            <span>1000 bis 2000 km</span>
+          </div>
+        </div>
+        <div class="layer-summary" data-show>
+          <div class="summary-list">
+            <p>Zusammenfassung</p>
+            <ul></ul>
+          </div>
+          <p>Gesamtpreis <span id="price">0 €</span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
